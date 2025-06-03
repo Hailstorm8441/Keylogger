@@ -1,0 +1,36 @@
+.themeBox {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    background-color: var(--secondary1);
+    padding: 25px;
+    padding-left: 50px;
+    border-radius: 10px;
+}
+.grid {
+    width: 70vw;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 250px);
+    grid-gap: 12px;
+    margin-top: 4vh;
+}
+.gridItem {
+    border-radius: 10px;
+    margin-top: 2vh;
+    height: 100px;
+    text-align: center;
+    background-color: var(--secondary2);
+    background-color: var(--secondary2);
+    color: var(--textcolor);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    margin: 1vh;
+    transition: 0.2s linear;
+}
+
+.gridItem:hover {
+    background-color: var(--textcolor);
+    color: var(--background);
+}

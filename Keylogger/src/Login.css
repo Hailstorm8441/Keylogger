@@ -1,0 +1,227 @@
+.logininput {
+    background-color: var(--background);
+    border-radius: 10px;
+    padding: 0.6%;
+    accent-color: transparent;
+    border: 3px solid var(--textcolor);
+    color: var(--textcolor);
+    margin-top: 4vh;
+    height: 45px;
+    transition: 0.1s linear;
+}
+
+.loginbutton {
+    background-color: var(--background);
+    color: var(--textcolor);
+    border-radius: 10px;
+    border: 4px solid var(--textcolor);
+    font-size: 90%;
+    padding: 15px;
+    width: 200px;
+    vertical-align: top;
+    margin-top: 4vh;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.dangerousbutton {
+    border-color: var(--incorrecttextcolor);
+    background-color: var(--background);
+    color: var(--incorrecttextcolor);
+    border-radius: 10px;
+    border: 4px solid;
+    font-size: 90%;
+    padding: 15px;
+    width: 200px;
+    vertical-align: top;
+    margin-top: 4vh;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.loginWrapper {
+    display:flex;
+    justify-content:center;
+    flex-direction:column; 
+    margin-left:22vw;
+    margin-right:22vw;
+    margin-top:15vh;
+}
+
+.logingrid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 200px);
+    grid-gap: 25px;
+    margin-top: 2vh;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    background-color: var(--secondary1);
+    font: inherit;
+    margin-top: 0px;
+    border: 3px solid var(--secondary2);
+    border-radius: 5px;
+    transition: 0.2s linear;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--correcttextcolor);  
+    border: 3px solid var(--secondary2);
+}
+
+input[type="checkbox"]:hover {
+    background-color: var(--correcttextcolor);
+    border: 3px solid var(--secondary2);
+}
+
+input[type="checkbox"]:hover:checked {
+    background-color: var(--correcttextcolor);
+    border: 3px solid var(--secondary2);
+}
+
+.userInfo {
+    background-color: var(--secondary1);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.userInfoButton {
+    background-color: var(--secondary1);
+}
+
+.dangerousbutton:hover {
+    background-color: var(--incorrecttextcolor);
+    color: var(--background);
+    border-color: var(--incorrecttextcolor);
+}
+
+.loginbutton:hover {
+    background-color: var(--textcolor);
+    color: var(--secondary1);
+}
+
+.profilePicWrapper {
+    position: relative;
+}
+
+.userProfilePic {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border-color: var(--textcolor);
+    border-width: 3px;
+    border-style: solid;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.userProfilePicHover {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border-color: var(--textcolor);
+    border-width: 3px;
+    border-style: solid;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 15px;
+    text-align: center;
+    color: #00000000;
+    transition: 0.1s linear;
+}
+
+.userProfilePicText {
+    position: absolute;
+    top: 30%;
+}
+
+.userProfilePicHover:hover {
+    color: var(--textcolor);
+    background-color: #00000080;
+}
+
+.overlay-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.popup-box {
+    background: var(--background);
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    width: 320px;
+    text-align: center;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: var(--textcolor);
+    text-align: left;
+}
+
+.form-input {
+    background-color: var(--background);
+    border-radius: 10px;
+    padding: 0.6%;
+    accent-color: transparent;
+    margin-bottom: 25px;
+    border: 3px solid var(--textcolor);
+    color: var(--textcolor);
+    transition: 0.1s linear;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.overlay-container.show {
+    display: flex;
+    opacity: 1;
+}
+
+.verifyText {
+    font-size: 20px;
+    margin-bottom: -15px;
+    cursor: pointer;
+    transition: 0.1s linear;
+}
+
+.verifyText:hover {
+    color: var(--secondary2);
+}

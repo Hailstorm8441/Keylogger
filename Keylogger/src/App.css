@@ -1,0 +1,36 @@
+.routes {
+    margin-top: 1vh;
+    transition: 0.2s linear;
+    font-size: 50px;
+    cursor: pointer;
+    color: var(--text);
+}
+
+.routes:hover {
+    margin-top: 1vh;
+    transition: 0.2s linear;
+    font-size: 50px;
+    cursor: pointer;
+    color: var(--correcttextcolor);
+}
+
+.title {
+    font-size: 50px;
+    margin-left: 2vw;
+    cursor: pointer;
+    color: var(--textcolor);
+    transition: 0.2s linear;
+}
+
+.title:hover {
+    color: var(--correcttextcolor);
+}
+
+.routesWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-bottom: 1vh;
+    margin-top: 0px;
+}
