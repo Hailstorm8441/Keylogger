@@ -15,11 +15,12 @@ A simple app to test your WPM while typing built with the ReactJS framework and 
 - Two modes of typing to choose from
 - Different themes and fonts to choose from
 - An account system to save scores between sessions
+- A leaderboard to compete with other users (comming soon)
 
 # Bug report
 If you find a bug within the app, email me [here](mailto:Hailstorms_8440@proton.me) or create an issue within GitHub.
 
 # Todo
 - Add a leaderboard system.
-- Clean up test code to be more efficient.
-- Migrate to a different Firebase project to change the URL to match the new project name.
+- Refactor and clean up code in the test logic, and add comments to make code more clear
+- Change the name of the app and migrate to another firebase project so the url reflects that change
